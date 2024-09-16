@@ -88,6 +88,7 @@
 <body>
     <header>
         <a href="#" class="logo">OM PATEL</a>
+		<span class="hamburger" id="hamburgerMenu"><i class="fa-solid fa-bars"></i></span>
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Me</a>
@@ -133,6 +134,15 @@
         // Redirect to the ORACLE button page
         document.getElementById("backButton").addEventListener("click", function() {
             window.location.href = "achievements.html"; // Redirect back to the Oracle button page
+        });
+    </script>
+	
+	  <script>
+        // Existing JavaScript code
+
+        // Add hamburger menu toggle functionality
+        document.getElementById("hamburgerMenu").addEventListener("click", function() {
+            document.querySelector("nav").classList.toggle("active");
         });
     </script>
 </body>
