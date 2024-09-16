@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,27 +16,30 @@
             <a href="about.html">About Me</a>
             <a href="skills.html">Skills</a>
             <a href="achievements.html">Achievements</a>
-            <a href="#" >Resume</a>
-            <a href="#" >CV</a>
+            <a href="#">Resume</a>
+            <a href="#">CV</a>
         </nav>
-    </header></br></br></br></br>
-    
+
+        <!-- Hamburger Menu Icon -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
     <section class="home">
         <div class="home-img">
             <img src="main.jpg" alt="Profile photo">
         </div>
-        <div class="home-content"></br></br>
-            </br></br><h1>Hi there, It's <span>Om</span></h1>
-            <h3 class="typing-text">I'm a <span></span></h3></br></br>
-            <p>It’s a pleasure to have you here!</br></br>
-            I’m OM PATEL, a skilled software developer focused on building impactful software solutions.</br>
-            My journey in the tech world has equipped me with a diverse skill set and a problem-solving mindset.</br>
-            I invite you to explore my portfolio and discover the projects that showcase my commitment to excellence and innovation.</br>
-            I look forward to potential opportunities to collaborate and make a difference together.</p></br></br></br></br>
-            
-            <!-- Update the PROJECTS button to link to the projects page -->
+        <div class="home-content">
+            <h1>Hi there, It's <span>Om</span></h1>
+            <h3 class="typing-text">I'm a <span></span></h3>
+            <p>It’s a pleasure to have you here!<br><br>
+            I’m OM PATEL, a skilled software developer focused on building impactful software solutions.<br>
+            My journey in the tech world has equipped me with a diverse skill set and a problem-solving mindset.<br>
+            I invite you to explore my portfolio and discover the projects that showcase my commitment to excellence and innovation.<br>
+            I look forward to potential opportunities to collaborate and make a difference together.</p>
             <a href="projects.html" class="btn">PROJECTS</a>
-            
+
             <div class="social-icons">
                 <a href="https://www.linkedin.com/in/om-kasodariya-46642a266/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                 <a href="https://www.instagram.com/godric._.99/" target="_blank"><i class="fa-brands fa-instagram"></i></a> 
@@ -46,5 +48,20 @@
             </div>
         </div>
     </section>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+	  <script>
+        // Existing JavaScript code
+
+        // Add hamburger menu toggle functionality
+        document.getElementById("hamburgerMenu").addEventListener("click", function() {
+            document.querySelector("nav").classList.toggle("active");
+        });
+    </script>
 </body>
 </html>
